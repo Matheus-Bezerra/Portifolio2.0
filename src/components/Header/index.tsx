@@ -12,16 +12,16 @@ export const Header = () => {
 
   return (
     <>
-    <Box bg={bgHeader} as="header" position={["inherit", "inherit", "fixed", "fixed"]} w="100%" color={color}>
+    <Box bg={bgHeader} as="header" position={["inherit", "inherit", "fixed", "fixed"]} w="100%" color={color} zIndex={1}>
       <Flex justifyContent={"space-between"} align="center" h={["50px", "50px", "70px", "70px"]} maxW="1440px" m={"0 auto"} as="section" gap="1.5rem" px="2rem">
         <Logo />
         <Text as="h2" fontSize="1rem" display={["block", "block", "none", "none"]}>Matheus Bezerra</Text>
         <Flex as="nav" alignItems="center">
           <Flex gap="2rem" as="ul" display={['none', 'none', 'flex', 'flex']}>
-            <NavLink  path="/" alt="Página de apresentação do Matheus Bezerra">Home</NavLink>
-            <NavLink  path="/" alt="Página sobre o Matheus Bezerra">Sobre</NavLink>
-            <NavLink  path="/" alt="Página de projetos de Matheus Bezerra">Projetos</NavLink>
-            <NavLink  path="/" alt="Meios de contato do Matheus Bezerra">Contato</NavLink>
+            <NavLink as="a"  path="#home" alt="Página de apresentação do Matheus Bezerra">Home</NavLink>
+            <NavLink as="a"  path="#about" alt="Página sobre o Matheus Bezerra">Sobre</NavLink>
+            <NavLink as="a"  path="/" alt="Página de projetos de Matheus Bezerra">Projetos</NavLink>
+            <NavLink as="a"  path="/" alt="Meios de contato do Matheus Bezerra">Contato</NavLink>
           </Flex>
           <IconButton aria-label="Botão de alterar tema da página" ml="calc(2rem - 4px)" p="12px" borderRadius="9999px" bg="gray.700" _hover={{bg:"blue.400"}} cursor="pointer" transition=".4s background" display={['flex', 'flex', 'flex', 'flex']} onClick={toggleColorMode} size={["sm", "sm", "md", "md"]}>
             {colorMode === 'light' ? <SunIcon fontSize={"20px"} color={'white'}/> : <MoonIcon fontSize={"20px"} color='white'/>}

@@ -8,12 +8,12 @@ export const MenuMobile = () => {
   const color = useColorModeValue('white', 'black')
 
   return (
-    <Box position={"fixed"} bg={bg} w="100%" bottom="0" display={["block", "block", "none", "none"]}>
+    <Box position={"fixed"} bg={bg} w="100%" bottom="0" display={["block", "block", "none", "none"]} zIndex={1}>
       <Flex justifyContent={"space-between"} align="center" h="50px" px="2rem" m="0 auto" as="nav" gap="1.5rem">
-        <NavLink path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineHome fontSize="28px" color={color}/> </NavLink>
-        <NavLink path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineUser fontSize="28px" color={color}/> </NavLink>
-        <NavLink path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineProject fontSize="28px" color={color}/> </NavLink>
-        <NavLink path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineMessage fontSize="28px" color={color}/> </NavLink>
+        <NavLink as="a" path="#home" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineHome fontSize="28px" color={color}/> </NavLink>
+        <NavLink as="a" path="#about" alt="Página sobre o Matheus Bezerra"> <AiOutlineUser fontSize="28px" color={color}/> </NavLink>
+        <NavLink as="a" path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineProject fontSize="28px" color={color}/> </NavLink>
+        <NavLink as="a" path="/" alt="Página de apresentação do Matheus Bezerra"> <AiOutlineMessage fontSize="28px" color={color}/> </NavLink>
       </Flex>
     </Box>
   )
