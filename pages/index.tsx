@@ -1,8 +1,9 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import Head from 'next/head'
-import { About } from '../src/components/About';
+import { About } from '../src/components/Sections/About';
 import { Header } from '../src/components/Header';
-import { HomeComponent } from '../src/components/Home';
+import { HomeComponent } from '../src/components/Sections/Home';
+import { Projects } from '../src/components/Sections/Projects';
 
 export default function Home() {
   const bg = useColorModeValue('gray.800', "whiteAlpha.900")
@@ -19,6 +20,7 @@ export default function Home() {
         <Header />
         <HomeComponent />
         <About />
+        <Projects />
       </Box>
     </>
   )

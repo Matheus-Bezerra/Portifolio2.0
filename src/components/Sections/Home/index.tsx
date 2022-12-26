@@ -4,7 +4,7 @@ import { ListButton } from './components/ListButton'
 import { ListIcon } from './components/ListIcon'
 import {RxDoubleArrowDown} from 'react-icons/rx'
 import dynamic from 'next/dynamic'
-import { TextStack } from '../TextStack'
+import { TextStack } from '../../TextStack'
 const  TypewriterComponent = dynamic(() => import('typewriter-effect'), { ssr: false })
 
 const animationKeyframes = keyframes`
