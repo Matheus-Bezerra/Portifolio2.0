@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Portifólio de Matheus Bezerra" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Box bg={bg} minH="100vh" color="white" fontFamily={"Inter, sans-serif"} boxSizing="border-box" textColor={color} scrollBehavior="smooth">
+      <Box bg={bg} minH="100vh" color="white" fontFamily={"Inter, sans-serif"} boxSizing="border-box" textColor={color} scrollBehavior="smooth" pb="60px">
         <Header />
         <HomeComponent />
         <About />
