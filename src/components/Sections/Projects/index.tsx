@@ -2,23 +2,68 @@ import { Box, Button, ButtonGroup, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 import { CardComponent } from '../../Card'
 import { TitleSections } from '../../TitleSections'
+import IgniteShopImg from '../../../assets/igniteShop.png'
+import DashGoImg from '../../../assets/dashGo.jpg'
+import DtMoneyImg from '../../../assets/dtMoney.jpg'
+import TaskImg from '../../../assets/task.jpg'
+import InstagramerImg from '../../../assets/instagramer.jpg'
+import PizzaImg from '../../../assets/pizzas.jpg'
 
 export const Projects = () => {
 
   return (
     <Flex as="section" minH={["100vh", "100vh", "calc(100vh - 70px)", "calc(100vh - 70px)"]} maxW="1440px" m={"0 auto"} px="2rem" gap="3rem" flexDir="column" id="projects" py="1.6rem">
       <TitleSections>Projetos</TitleSections>
-      <Flex flex={1} align="center" gap={["1.5rem", "2rem", "3rem", "4rem"]} flexWrap={"wrap"}>
-        <CardComponent link={{url: 'https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.8-ladc.gif', textAlt: 'Fonte google'}} image='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80' heading="Living room Sofa" description='This sofa is perfect for modern tropical spaces, baroque inspired
-        spaces, earthy toned spaces and for people who love a chic design with a
-        sprinkle of vintage design.'>
+      <Flex flex={1} align="center" justifyContent={["center", "center", "center", "center", "space-between"]} gap={["1.5rem", "2rem", "3rem", "3.5rem 2rem"]} flexWrap={"wrap"}>
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/IgniteShop', textAlt: 'Ignite Shop'}} image={IgniteShopImg} heading="Ignite Shop" description='Um e-commerce de camisetas utilizando para simular pagamentos a Api do Stripe.' tecnologies={["Next", "Typescript", "Stripe", "React", "Axios", "Keen-slider", "Stitches"]}>
           <ButtonGroup spacing='2'>
-            <Button variant='solid' colorScheme='blue'>
-              Buy now
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/IgniteShop'>
+              Repositório
+            </Button>
+          </ButtonGroup>
+        </CardComponent>
+
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/DashGo', textAlt: 'DashGo'}} image={DashGoImg} heading="Dash Go" description='Uma Dashboard que contém listagem e criação de usuários, gráficos de dados entre outras funcionalidades.' tecnologies={["Next", "React", "Typescript", "Tan Stack", "Axios", "Mirage Js", "Faker", "Chakra UI", "React Hook Form", "YUP"]}>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href="https://github.com/Matheus-Bezerra/DashGo">
+              Repositório
+            </Button>
+          </ButtonGroup>
+        </CardComponent>
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/dtMoney', textAlt: 'Sistema de finanças que pode colocar suas despesas e receitas para assim ter um controle financeiro melhor'}} image={DtMoneyImg} heading="Dt Money" description='Dashboard para o usuário ter um controle financeiro melhor, controlando suas despesas e receitas.' tecnologies={["React", "Typescript", "Context API", "JSON Server", "Axios", "Styled Components", "ZOD", "React Hook Form", "Context Selectors"]}>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/dtMoney'>
+              Repositório
+            </Button>
+          </ButtonGroup>
+        </CardComponent>
+
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/TaskCalendar', textAlt: 'Sistema para colocar suas tarefas do dia a dia'}} image={TaskImg} heading="Tasks Web" description='Aplicação Full Stack para o usuário colocar suas tarefas do seu dia a dia, com isso tendo uma organização melhor do seu dia.' tecnologies={["React", "Typescript", "Context API", "Chakra UI", "Axios", "Apex Charts", "Node", "React Hook Form", "UUID"]}>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/TaskCalendar'>
+              Repositório
+            </Button>
+          </ButtonGroup>
+        </CardComponent>
+
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/Instagramer', textAlt: 'Instagram 2.0 pra curtir publicações, comentar e curtir o design'}} image={InstagramerImg} heading="Instagramer" description='Uma página com objetivo de ter um design um pouco mais futurista do instagram, como se fosse um 2.0' tecnologies={["HTML", "CSS", "Javascript"]}>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/Instagramer'>
+              Repositório
+            </Button>
+          </ButtonGroup>
+        </CardComponent>
+
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/Pizzaria-do-Z-', textAlt: 'Página de pizza onde contém um carrinho para simular uma compra de diversos tipos de pizzas'}} image={PizzaImg} heading="Pizzaria do Z" description='Página de pizzas onde contém um carrinho de compras para adicionar diversos tipos de pizzas, simulando uma compra' tecnologies={["HTML", "CSS", "Javascript"]}>
+          <ButtonGroup spacing='2'>
+            <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/Pizzaria-do-Z-'>
+              Repositório
             </Button>
           </ButtonGroup>
         </CardComponent>
       </Flex>
+
+      <Button cursor={"pointer"} variant="solid" colorScheme={"blue"} as="a" target="_blank">Ver mais</Button>
     </Flex>
   )
 }
