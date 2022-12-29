@@ -7,9 +7,13 @@ export const ListButton = () => {
   return (
     <Flex mt=".4rem" gap="1rem" flexWrap={"wrap"}>
         <Button colorScheme={"blue"}>Baixar CV</Button>
-        <Button colorScheme='linkedin' leftIcon={<FaLinkedin />}>Linkedin</Button>
-        <Button colorScheme={"orange"} leftIcon={<SiGmail />}>Gmail</Button>
-        <Button colorScheme='purple' leftIcon={<FaGithub />}>Github</Button>
+        <Button colorScheme='linkedin' leftIcon={<FaLinkedin />} as="a" href="https://www.linkedin.com/in/matheus-bezerra04/" target="_blank">
+          Linkedin
+        </Button>
+        <Button colorScheme={"orange"} leftIcon={<SiGmail />} as="a" href="mailto:matheusbwzerra002@gmail.com">
+          Gmail
+        </Button>
+        <Button colorScheme='purple' leftIcon={<FaGithub />} as="a" target="_blank" href="https://github.com/Matheus-Bezerra">Github</Button>
       </Flex>
   )
 }

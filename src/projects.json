@@ -1,9 +1,0 @@
-[
-  {
-    image: any
-    heading: string
-    description: string
-    link: {url: string; textAlt: string}
-    children: ReactNode
-  }
-]

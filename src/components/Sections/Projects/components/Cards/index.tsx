@@ -11,7 +11,7 @@ import PizzaImg from '../../../../../assets/pizzas.jpg'
 export const Cards = () => {
   return (
     <>
-        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/IgniteShop', textAlt: 'Ignite Shop'}} image={IgniteShopImg} heading="Ignite Shop" description='Um e-commerce de camisetas utilizando para simular pagamentos a Api do Stripe.' tecnologies={["Next", "Typescript", "Stripe", "React", "Axios", "Keen-slider", "Stitches"]}>
+        <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/IgniteShop', textAlt: 'Ignite Shop'}} image={IgniteShopImg} heading="Ignite Shop" description='Um e-commerce de camisetas utilizando a Api do Stripe para simular pagamentos.' tecnologies={["Next", "Typescript", "Stripe", "React", "Axios", "Keen-slider", "Stitches"]}>
       <ButtonGroup spacing='2'>
         <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/IgniteShop'>
           Repositório
@@ -34,7 +34,7 @@ export const Cards = () => {
       </ButtonGroup>
     </CardComponent>
 
-    <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/TaskCalendar', textAlt: 'Sistema para colocar suas tarefas do dia a dia'}} image={TaskImg} heading="Tasks Web" description='Aplicação Full Stack para o usuário colocar suas tarefas do seu dia a dia, com isso tendo uma organização melhor do seu dia.' tecnologies={["React", "Typescript", "Context API", "Chakra UI", "Axios", "Apex Charts", "Node", "React Hook Form", "UUID"]}>
+    <CardComponent link={{url: 'https://github.com/Matheus-Bezerra/TaskCalendar', textAlt: 'Sistema para colocar suas tarefas do dia a dia'}} image={TaskImg} heading="Tasks Web" description='Aplicação Full Stack para o usuário colocar suas tarefas do seu dia a dia, com isso tendo uma organização melhor da sua rotina.' tecnologies={["React", "Typescript", "Context API", "Chakra UI", "Axios", "Apex Charts", "Node", "React Hook Form", "UUID"]}>
       <ButtonGroup spacing='2'>
         <Button variant='solid' colorScheme='blue' as="a" target={"_blank"} href='https://github.com/Matheus-Bezerra/TaskCalendar'>
           Repositório

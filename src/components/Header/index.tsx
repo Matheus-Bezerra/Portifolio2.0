@@ -18,10 +18,10 @@ export const Header = () => {
         <Text as="h2" fontSize="1rem" display={["block", "block", "none", "none"]}>Matheus Bezerra</Text>
         <Flex as="nav" alignItems="center">
           <Flex gap="2rem" as="ul" display={['none', 'none', 'flex', 'flex']}>
-            <NavLink as="a"  path="#home" alt="Página de apresentação do Matheus Bezerra">Home</NavLink>
-            <NavLink as="a"  path="#about" alt="Página sobre o Matheus Bezerra">Sobre</NavLink>
-            <NavLink as="a"  path="#projects" alt="Página de projetos de Matheus Bezerra">Projetos</NavLink>
-            <NavLink as="a"  path="/" alt="Meios de contato do Matheus Bezerra">Contato</NavLink>
+            <NavLink as="a"  path="#home" alt="Seção de apresentação do Matheus Bezerra">Home</NavLink>
+            <NavLink as="a"  path="#about" alt="Seção sobre o Matheus Bezerra">Sobre</NavLink>
+            <NavLink as="a"  path="#projects" alt="Seção de projetos de Matheus Bezerra">Projetos</NavLink>
+            <NavLink as="a"  path="#contact" alt="Meios de contato do Matheus Bezerra">Contato</NavLink>
           </Flex>
           <IconButton aria-label="Botão de alterar tema da página" ml="calc(2rem - 4px)" p="12px" borderRadius="9999px" bg="gray.700" _hover={{bg:"blue.400"}} cursor="pointer" transition=".4s background" display={['flex', 'flex', 'flex', 'flex']} onClick={toggleColorMode} size={["sm", "sm", "md", "md"]}>
             {colorMode === 'light' ? <SunIcon fontSize={"20px"} color={'white'}/> : <MoonIcon fontSize={"20px"} color='white'/>}
