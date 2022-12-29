@@ -63,7 +63,9 @@ export const Projects = () => {
         </CardComponent>
       </Flex>
 
-      <Button cursor={"pointer"} variant="solid" colorScheme={"blue"} as="a" target="_blank">Ver mais</Button>
+      <Flex justify="center">
+        <Button cursor={"pointer"} variant="solid" colorScheme={"blue"} as="a" target="_blank">Ver mais</Button>
+      </Flex>
     </Flex>
   )
 }
