@@ -13,7 +13,7 @@ export const Projects = () => {
       </Flex>
 
       <Flex justify="center">
-        <Button cursor={"pointer"} variant="solid" colorScheme={"blue"} as="a" target="_blank">Ver mais</Button>
+        <Button cursor={"pointer"} variant="solid" colorScheme={"blue"} as="a" href="https://github.com/Matheus-Bezerra" target="_blank">Ver mais</Button>
       </Flex>
     </Flex>
   )
